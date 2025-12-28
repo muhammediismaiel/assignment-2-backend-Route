@@ -10,8 +10,19 @@ function printPath() {
 // printPath();
 
 //! secound task
-const Path = require("path");
-function getName(path){
-    console.log(Path.basename(path));
+function getName(path) {
+  let str1 = path.slice(path.lastIndexOf("/") + 1);
+  console.log(str1);
 }
 // getName("c:/img/aa.txt")
+
+//! third task
+function buildObj(dir, name) {
+  console.log(dir + name);
+}
+// buildObj("/file","/aa.exe")
+//!forthTask
+function returnExt(path) {
+  console.log(path.slice(path.lastIndexOf(".")));
+}
+// getName("c:/img/aa.txt");
