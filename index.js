@@ -5,4 +5,11 @@ function printPath() {
     Dir: __dirname,
   });
 }
-printPath();
+// printPath();
+
+//! secound task
+const Path = require("path");
+function getName(path){
+    console.log(Path.basename(path));
+}
+getName("c:/img/aa.txt")
