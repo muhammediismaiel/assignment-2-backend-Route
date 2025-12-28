@@ -20,3 +20,9 @@ function buildObj(dir,name){
     console.log(dir+name);
 }
 // buildObj("/file","/aa.exe")
+
+//!forthTask
+function returnExt(path){
+    console.log(path.slice(path.lastIndexOf(".")));
+}
+// returnExt("c:/img/aa.txt")
